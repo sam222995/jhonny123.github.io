@@ -1,0 +1,287 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de nosotros</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fc;
+            color: #1e293b;
+        }
+
+        .acerca {
+            padding: 70px 20px;
+        }
+
+        .contenedor {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .etiqueta {
+            display: inline-block;
+            background-color: #dbeafe;
+            color: #2563eb;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .encabezado {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .encabezado h1 {
+            font-size: 38px;
+            margin-bottom: 18px;
+            color: #0f172a;
+        }
+
+        .encabezado h1 span {
+            color: #2563eb;
+        }
+
+        .encabezado p {
+            max-width: 650px;
+            margin: auto;
+            color: #64748b;
+            font-size: 17px;
+            line-height: 1.7;
+        }
+
+        .contenido {
+            display: flex;
+            align-items: center;
+            gap: 45px;
+            margin-bottom: 50px;
+        }
+
+        .imagen {
+            flex: 1;
+            min-height: 300px;
+            background: linear-gradient(135deg, #0f172a, #1d4ed8);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 100px;
+        }
+
+        .texto {
+            flex: 1;
+        }
+
+        .texto h2 {
+            font-size: 28px;
+            margin-bottom: 18px;
+            color: #0f172a;
+        }
+
+        .texto p {
+            color: #64748b;
+            line-height: 1.8;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        .boton {
+            display: inline-block;
+            background-color: #2563eb;
+            color: white;
+            padding: 13px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+
+        .boton:hover {
+            background-color: #1d4ed8;
+            transform: translateY(-3px);
+        }
+
+        .tarjetas {
+            display: flex;
+            gap: 22px;
+        }
+
+        .tarjeta {
+            flex: 1;
+            background-color: white;
+            padding: 30px 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(15, 23, 42, 0.06);
+            border: 1px solid #e2e8f0;
+            transition: 0.3s;
+        }
+
+        .tarjeta:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(15, 23, 42, 0.12);
+        }
+
+        .icono {
+            font-size: 32px;
+            margin-bottom: 18px;
+        }
+
+        .tarjeta h3 {
+            margin-bottom: 12px;
+            color: #0f172a;
+            font-size: 20px;
+        }
+
+        .tarjeta p {
+            color: #64748b;
+            line-height: 1.7;
+            font-size: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #64748b;
+            font-size: 14px;
+        }
+
+        /* Diseño para celulares */
+
+        @media (max-width: 768px) {
+            .acerca {
+                padding: 45px 18px;
+            }
+
+            .encabezado h1 {
+                font-size: 30px;
+            }
+
+            .contenido {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            .imagen {
+                width: 100%;
+                min-height: 230px;
+            }
+
+            .tarjetas {
+                flex-direction: column;
+            }
+
+            .texto h2 {
+                font-size: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="acerca">
+        <div class="contenedor">
+
+            <div class="encabezado">
+                <span class="etiqueta">ACERCA DE NOSOTROS</span>
+
+                <h1>
+                    Tecnología para un
+                    <span>futuro mejor</span>
+                </h1>
+
+                <p>
+                    Somos una tienda especializada en computadoras
+                    y accesorios tecnológicos, comprometida con
+                    ofrecer productos de calidad para tus necesidades y cubrir requerimentos
+                    de nuestros clientes en el area de tecnologia.
+                </p>
+            </div>
+
+            <div class="contenido">
+
+                <div class="imagen">
+                    💻
+                </div>
+
+                <div class="texto">
+                    <h2>¿Quiénes somos?</h2>
+
+                    <p>
+                        Somos una tienda dedicada a la venta de
+                        computadoras, componentes y accesorios
+                        tecnológicos para estudiantes, profesionales
+                        y empresas.
+                    </p>
+
+                    <p>
+                        Nuestro objetivo es ayudarte a encontrar
+                        la tecnología adecuada, brindándote una
+                        atención cercana y soluciones que se adapten
+                        a tus necesidades.
+                    </p>
+
+                    <a href="contacto.html" class="boton">
+                        Contáctanos →
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="tarjetas">
+
+                <div class="tarjeta">
+                    <div class="icono">🎯</div>
+                    <h3>Nuestra misión</h3>
+                    <p>
+                        Ofrecer productos tecnológicos de calidad
+                        y ayudar a nuestros clientes a encontrar
+                        soluciones para sus necesidades.
+                    </p>
+                </div>
+
+                <div class="tarjeta">
+                    <div class="icono">🚀</div>
+                    <h3>Nuestra visión</h3>
+                    <p>
+                        Ser una tienda reconocida por su innovación,
+                        confianza y compromiso con la tecnología.
+                    </p>
+                </div>
+
+                <div class="tarjeta">
+                    <div class="icono">🤝</div>
+                    <h3>Nuestros valores</h3>
+                    <p>
+                        Trabajamos con responsabilidad, honestidad
+                        y respeto, buscando siempre la satisfacción
+                        de nuestros clientes.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        © 2026 Tienda de Computadoras y Accesorios Tecnológicos.
+        Todos los derechos reservados.
+    </footer>
+
+</body>
+</html>

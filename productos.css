@@ -1,0 +1,138 @@
+
+/* Configuración general */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+}
+
+/* Sección principal */
+
+.productos {
+    text-align: left;
+    padding: 40px 30px;
+}
+
+/* Título principal */
+
+.productos h1 {
+    font-size: 36px;
+    color: #0f172a;
+    margin-bottom: 15px;
+}
+
+/* Descripción principal */
+
+.descripcion {
+    color: #64748b;
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+/* Contenedor vertical alineado a la izquierda */
+
+.contenedor {
+    display: flex;
+    /* flex-direction: column; */
+    
+    align-items: flex-start;
+    flex-wrap: wrap; /*ajuste horizontal*/
+    gap: 25px;
+    width: 100%;
+}
+
+/* Tarjetas de productos */
+
+.producto {
+    background-color: white;
+    width: 100%;
+    max-width: 400px;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: left;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e2e8f0;
+    transition: 0.3s;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Imágenes */
+
+.producto img {
+    display: block;
+    width: 200px;
+    height: 160px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+/* Nombre del producto */
+
+.producto h2 {
+    color: #1e3a5f;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Descripción del producto */
+
+.producto .detalle {
+    color: #64748b;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+/* Precio */
+
+.producto .precio {
+    color: #2563eb;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 15px 0 20px;
+}
+
+/* Botón */
+
+.producto button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 13px 20px;
+    border-radius: 7px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.producto button:hover {
+    background-color: #1e40af;
+}
+
+/* Adaptación para celulares */
+
+@media (max-width: 600px) {
+    .productos {
+        padding: 25px 15px;
+    }
+
+    .productos h1 {
+        font-size: 29px;
+    }
+
+    .producto {
+        max-width: 100%;
+    }
+}
